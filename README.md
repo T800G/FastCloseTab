@@ -3,18 +3,18 @@ Helper application for Firefox and other browsers to close the active tab instea
 
 Inspired by Fast Close Tabs add-on for Firefox https://addons.mozilla.org/en-US/firefox/addon/fast-close-tabs/
 
-Fastest way to close active tab: click in the top right corner of the screen
+Fastest way to close active tab: click in the top right corner of the screen<br/>
 ![screenshot](https://github.com/T800G/FastCloseTab/blob/master/maximized.png "maximized window detail")<br/>
 
 ## Works with popular browsers
-Firefox
+Firefox<br/>
 ![screenshot](https://github.com/T800G/FastCloseTab/blob/master/ffox.png "Firefox")<br/>
-Internet Explorer
+Internet Explorer<br/>
 ![screenshot](https://github.com/T800G/FastCloseTab/blob/master/ie.png "Internet Explorer")<br/>
-Opera
+Opera<br/>
 ![screenshot](https://github.com/T800G/FastCloseTab/blob/master/opera.png "Opera")<br/>
 
-Also works with Classic windows theme (custom dark theme shown):
+Also works with Classic windows theme (custom dark theme shown)<br/>
 ![screenshot](https://github.com/T800G/FastCloseTab/blob/master/customtheme.png "custom windows theme")<br/>
 
 ## Known problem
