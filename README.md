@@ -1,5 +1,5 @@
 # Fast Close Tab
-Helper application for Firefox and other browsers to close the active tab instead of the window.
+Helper application for Firefox and other browsers to close the active tab instead of the window.<br>
 Icon is shown in system tray from which it can be closed (right-click icon to show Exit menu).
 
 Inspired by Fast Close Tabs add-on for Firefox https://addons.mozilla.org/en-US/firefox/addon/fast-close-tabs/
