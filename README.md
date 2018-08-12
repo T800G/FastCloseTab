@@ -18,7 +18,7 @@ Opera<br/>
 Also works with Classic windows theme (custom dark theme shown)<br/>
 ![screenshot](https://github.com/T800G/FastCloseTab/blob/master/customtheme.png "custom windows theme")<br/>
 
-## Known problem
+## Known issues
 If window is not in maximized state, application button does not completely overlay the close button on high dpi settings (Opera browser is not affected).
 
 ## Minimum system requirements
