@@ -10,7 +10,7 @@ Protip: fastest way to close active tab is to move the cursor to the top right c
 ## Works with popular browsers
 Firefox on Windows 10<br/>
 ![screenshot](https://github.com/T800G/FastCloseTab/blob/master/ffox.png "Firefox")<br/>
-Internet Explorer<br/>
+Internet Explorer on Windows 10<br/>
 ![screenshot](https://github.com/T800G/FastCloseTab/blob/master/ie.png "Internet Explorer")<br/>
 Opera on Windows 7<br/>
 ![screenshot](https://github.com/T800G/FastCloseTab/blob/master/opera.png "Opera")<br/>
