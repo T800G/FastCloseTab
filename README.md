@@ -19,7 +19,7 @@ Also works with Classic windows theme (Windows 7 custom dark theme)<br/>
 ![screenshot](https://github.com/T800G/FastCloseTab/blob/master/customtheme.png "custom windows theme")<br/>
 
 ## Known issues
-On Windows 7 with Aero enabled, application button does not completely overlay the caption close button.<br>
+On Windows 7 with Aero enabled, application button does not completely cover the caption close button.<br>
 Opera browser is not affected.
 
 ## Minimum system requirements
