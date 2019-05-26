@@ -112,7 +112,7 @@ BOOL IsSameProcessWnd(HWND hwnd1, HWND hwnd2)
 	DWORD pid1, pid2;
 	DWORD tid1 = GetWindowThreadProcessId(hwnd1, &pid1);
 	DWORD tid2 = GetWindowThreadProcessId(hwnd2, &pid2);
-	if (tid1 == tid1 && pid1 == pid2) return TRUE;
+	if (tid1 == tid2 && pid1 == pid2) return TRUE;
 return FALSE;
 }
 /////////////////////////////////////////////////
@@ -191,7 +191,7 @@ LRESULT CALLBACK mainWndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPar
 	switch (message)
 	{
 		case WM_CREATE:
-			g_hButtonWnd=CreateWindow(TEXT("BUTTON"), TEXT("T"), WS_VISIBLE | WS_CHILD | BS_PUSHBUTTON | BS_ICON,
+			g_hButtonWnd=CreateWindow(TEXT("BUTTON"), TEXT("T"), WS_VISIBLE | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | BS_PUSHBUTTON | BS_ICON | CS_BYTEALIGNCLIENT,
 									 -1*GetSystemMetrics(SM_CXEDGE),
 									 -1*GetSystemMetrics(SM_CYEDGE),
 									 ((LPCREATESTRUCT)lParam)->cx +2*GetSystemMetrics(SM_CXEDGE),
@@ -227,7 +227,7 @@ LRESULT CALLBACK mainWndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPar
 						SetWindowPos(hWnd, HWND_TOP,
 										tbi.rgrect[5].left,
 										tbi.rgrect[5].top,
-										tbi.rgrect[5].right - tbi.rgrect[5].left +GetSystemMetrics(SM_CXEDGE), //.right is just outside of rect //aero metrics?
+										tbi.rgrect[5].right - tbi.rgrect[5].left, // +GetSystemMetrics(SM_CXEDGE), //.right is just outside of rect //aero metrics?
 										tbi.rgrect[5].bottom - tbi.rgrect[5].top,
 										SWP_SHOWWINDOW | SWP_NOACTIVATE);
 
@@ -296,6 +296,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCm
 	wcex.hInstance = hInstance;
 	wcex.lpfnWndProc = mainWndProc;
 	wcex.lpszClassName = APPWNDCLASSNAME;
+wcex.hbrBackground = (HBRUSH)GetStockObject(WHITE_BRUSH);
 	if (!RegisterClassEx(&wcex)) goto FINALIZE;
 
 RECREATEWND:
